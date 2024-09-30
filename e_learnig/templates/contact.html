@@ -1,0 +1,51 @@
+<!-- templates/contact.html -->
+{% extends 'layout.html' %}
+{% load static %} <!-- Load the static tag library -->
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<section class="contact-section">
+    <div class="container">
+        <div class="row">
+            <!-- Left Column: Contact Details -->
+            <div class="col-md-6">
+                <div class="contact-details">
+                    <h2>Contact</h2>
+                    <p>
+                        Contact us for questions, technical assistance, or collaboration opportunities via the contact
+                        information provided. For Group Discussions, the WhatsApp group link will also be provided
+                        below.
+                    </p>
+                    <p><strong>E-mail:</strong> hello@reallygreatsite.com</p>
+                    <p><strong>Phone Number:</strong> +234 46567 768</p>
+                    <p><strong>WhatsApp Group:</strong>
+                        <a href="https://www.whatsapp.com/discussion/DAGRNyeqaaE/dz5wJ0WffGxVTPXEOVOgaQ/edit">
+                            Join WhatsApp
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Form -->
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="message" rows="4" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

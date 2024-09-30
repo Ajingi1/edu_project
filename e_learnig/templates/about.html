@@ -1,0 +1,40 @@
+<!-- templates/about.html -->
+{% extends 'layout.html' %}
+{% load static %} <!-- Load the static tag library -->
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<section class="about-section">
+    <div class="container">
+        <h2 class="about-title">ABOUT US</h2>
+        <div class="row">
+            <!-- Left Column: Image -->
+            <div class="col-md-6">
+                <p class="about-text">
+                    Welcome to the Islamic Learning Platform for Muslims, your dedicated online resource for exploring
+                    and deepening your understanding of Islam. Our mission is to provide accessible and reliable
+                    educational materials covering essential Islamic teachings, including <span class="highlight">Fardhu
+                        Ain</span>, <span class="highlight">Fardhu Kifayah</span>, and other key concepts. We aim to
+                    bridge the gap in knowledge by offering comprehensive resources that cater to diverse learning
+                    needs.
+                </p>
+                <img src="path/to/your/image1.jpg" alt="Islamic Learning Platform" class="about-image">
+            </div>
+
+            <!-- Right Column: Text -->
+            <div class="col-md-6">
+                <img src="path/to/your/image2.jpg" alt="Arabic Calligraphy" class="arabic-calligraphy">
+                <p class="about-text">
+                    Our platform fosters a supportive community where individuals can engage in communal learning, share
+                    experiences, and seek guidance. With user-friendly features and a variety of learning formats—such
+                    as articles, videos, and interactive forums—we strive to make Islamic education engaging and
+                    practical for all. Whether you are new to Islam or looking to refresh your knowledge, our platform
+                    is here to empower you on your spiritual journey. Join us as we explore the beauty of Islam
+                    together!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
