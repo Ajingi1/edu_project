@@ -1,0 +1,5 @@
+# Ignore all database files
+*.db
+
+# Ignore all log files
+*.log
