@@ -12,7 +12,10 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 def index(request):
+    
     return render(request, 'index.html')
+
+
 
 def about(request):
     return render(request, 'about.html')
@@ -20,22 +23,7 @@ def about(request):
 def contact(request):
     return render(request, 'contact.html')
 
-def login(request):
-    # if request.method == 'POST':
-    #     username = request.POST.get('username')
-    #     password = request.POST.get('password')
-    #     user = authenticate(request, username=username, password=password)
-        
-    #     if user is not None:
-    #         auth_login(request, user)
-    #         return redirect('dashboard')  # Redirect to a home page or another page after successful login
-    #     else:
-    #         # Handle the case where authentication fails
-    #         error_message = "Invalid username or password"
-    #         return render(request, 'login.html', {'error': error_message})
-    # else:
-    #     return render(request, 'login.html')
-    
+def login(request): 
     if request.method == 'POST':
         login_input = request.POST.get('login_input')  # This will accept either email or username
         password = request.POST.get('password')
@@ -107,3 +95,12 @@ def logout(request):
     auth_logout(request)
     # Redirect to a  'index' file 
     return redirect('index') 
+
+def dashboard(request):
+    pass
+
+def profile(request):
+    pass
+
+def courses(request):
+    pass
